@@ -1,4 +1,5 @@
 #include "Item.h"
+#pragma once
 #include "Mart.h"
 #include <iostream>
 #include <string>
@@ -8,7 +9,7 @@ int main() {
 	//1¹ø
 	cout << "202411247 ±ÇÁØÈñ" << endl;
 
-	//2¹ø
+	//2¹ø	
 	Item item1;
 	Item item2("A0001", "»õ¿ì±ø", 5, 100);
 
@@ -23,3 +24,4 @@ int main() {
 	//5¹ø
 	juni1.showItems();
 }
+	

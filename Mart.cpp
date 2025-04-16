@@ -1,3 +1,4 @@
+#pragma once
 #include "Mart.h"
 #include <fstream>
 #include <memory>

@@ -1,15 +1,16 @@
+#pragma once
 #include "Item.h"
 #include <string.h>
 #include <string>
 #include <iostream>
 using namespace std;
 
-Item::Item(string code, std::string name, int num, int price) : code(code), name(name), num(num), price(price) {}
+Item::Item(string code, std::string name, int num, int price, int total_sell, std::string order_name) :code(code), name(name), num(num), price(price), total_sell(total_sell), order_name(order_name) {} //누적판매금액, 주문자까지 받는 생성자
 Item::Item() : code("noInfo"), name("noinfo"), num(0), price(0) {}
 Item::Item(string code) : code(code), name("noinfo"), num(0), price(0) {}
 Item::Item(string code, std::string name) : code(code), name(name), num(0), price(0) {}
 Item::Item(string code, std::string name, int num) : code(code), name(name), num(num) {}
-Item::Item(string code, std::string name, int num, int price, int total_sell, std::string order_name) :code(code), name(name), num(num), price(price), total_sell(total_sell), order_name(order_name) {} //누적판매금액, 주문자까지 받는 생성자
+Item::Item(string code, std::string name, int num, int price) : code(code), name(name), num(num), price(price) {}
 
 void Item::setCode(string code) {
 	this->code = code;

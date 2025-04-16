@@ -6,7 +6,7 @@ using namespace std;
 
 class Mart {
 private:
-	static int number;
+	static int number;  //자판기 번호
 	unique_ptr<Item[]> arr;
 	string filename;
 	string name;

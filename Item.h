@@ -1,7 +1,9 @@
+#pragma once
 #include <iostream>
 #include <string>
 #include <stdbool.h>
 using namespace std;
+
 
 class Item {
 private:
@@ -14,9 +16,9 @@ private:
 	std::string order_name; //주문자
 
 public:
-	Item(string code, std::string name, int num, int price);
 	Item();  //기본 생성자
 	Item(string code);
+	Item(string code, std::string name, int num, int price);
 	Item(string code, std::string name);
 	Item(string code, std::string name, int num);
 	Item(string code, std::string name, int num, int price, int total_sell, std::string order_name);

@@ -32,8 +32,8 @@ void movie::show_seat(unique_ptr<unique_ptr<int[]>[]>& seat) {
 	}
 	std::cout << endl;
 	for (int i = 0; i < this->getRow(); i++) {
+		std::cout << static_cast<char>('A' + i) << " ";
 		for (int j = 0;j < this->getCol(); j++) {
-			std::cout << static_cast<char>('A' + i) << " ";
 			if (seat[i][j] == 0) {
 				std::cout << "¤· ";
 			}
